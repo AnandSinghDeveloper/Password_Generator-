@@ -8,6 +8,9 @@ function App() {
   const [spchar, setSpchar] = useState(false)
   const [password, setPassword] = useState("")
 
+  console.log(password);
+  
+
   const PasswordGenretor = useCallback(()=> {
 
     let psscode = null 
@@ -50,7 +53,7 @@ function App() {
     <div className='h-screen w-screen flex justify-center items-center bg-[#ff735c] '>
       <div className='w-1/2 h-80 flex flex-col p-3  bg-[#f9c8c0] rounded-xl'>
 
-      <h1 className='text-3xl font-bold text-center pt-3'> Password Genretor</h1>
+      <h1 className='text-3xl font-bold text-center pt-3'> Password  </h1>
 
        <label className=' font-medium text-lg' htmlFor="password">Password</label>
        <div>
